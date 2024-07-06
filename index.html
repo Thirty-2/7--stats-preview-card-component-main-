@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Document</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body { background-color: hsl(233, 47%, 7%); }
+
+
+    /* Utilities */
+    h1 { width: 300px; }
+    h3 {  }
+    p { font-size: 14px; color: hsla(0, 0%, 100%, 0.6); }
+    span { color: hsl(277, 64%, 61%); }
+
+
+    /* Container */
+    #Container { display: flex; width: fit-content;background-color: hsl(244, 38%, 16%); margin: 230px auto; border-radius: 5px; color: white; }
+
+    /* Right */
+    .Right { padding: 40px; display: flex; flex-direction: column; gap: 40px; padding-right: 80px; }
+
+    /* Top */
+    .Top { width: 272px; }
+    .Top p { width: fit-content; }
+
+    /*Bottom  */
+    .Bottom { display: flex; gap: 50px; }
+
+    /* images */
+    .Img-1 { display: none; }
+    .Img-2 { width: 350px; height: 100%; border-top-right-radius: 5px; border-bottom-right-radius: 5px; }
+
+    @media screen and (max-width:600px) {
+    #Container { display: flex; flex-direction: column; text-align: center;  width: fit-content; margin: 100px auto; border-radius: 10px; }
+
+    /* util */
+    h1 { width: 260px; }
+
+    /* Right */
+    .Right { padding: 30px; display: flex; flex-direction: column;  gap: 40px; }
+
+    /* Top */
+    .Top { width: 260px; }
+
+    /* images */
+    .Img-1 { display: block; width: 330px; height: 100%; border-top-right-radius: 10px; border-top-left-radius: 10px; }
+    .Img-2 { display: none; }
+
+    /*Bottom  */
+    .Bottom { display: flex; flex-direction: column; gap: 50px; }
+    }
+
+
+  </style>
+</head>
+<body>
+  <div id="Container">
+    <div>
+      <img class="Img-1" src="images/image-header-mobile.jpg" alt="">
+    </div>
+
+    <div class="Right">
+
+      <div class="Top">
+        <h1>
+          Get <span>insights</span> that help your business grow.
+        </h1>
+        <br>
+        <p>
+          Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.
+        </p>
+      </div>
+  
+      <div class="Bottom">
+  
+        <div class="1">
+          <h3>
+            10k+
+          </h3>
+          <p>
+            companies
+          </p>
+        </div>
+  
+        <div class="2">
+          <h3>
+            314
+          </h3>
+          <p>
+            templates
+          </p>
+        </div>
+  
+        <div class="3">
+          <h3>
+            12M+
+          </h3>
+          <p>
+            queries
+          </p>
+        </div>
+  
+      </div>
+
+    </div>
+
+    <div>
+      <img class="Img-2" src="images/image-header-desktop.jpg" alt="">
+    </div>
+  </div>
+</body>
+</html>
